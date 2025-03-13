@@ -54,7 +54,6 @@ public class Main {
 		// SOLICITAR EL NOMBRE DEL PRODUCTO A ELIMINAR
 		System.out.println("Dime el nombre del producto: ");
 		String nombre = st.nextLine();
-
 		// VERIFICAR SI EL PRODUCTO EXISTE EN EL INVENTARIO
 		if (productos.containsKey(nombre)) {
 			productos.remove(nombre); // ELIMINAR EL PRODUCTO
@@ -71,8 +70,7 @@ public class Main {
 
 		// VERIFICAR SI EL PRODUCTO EXISTE EN EL INVENTARIO
 		if (productos.containsKey(nombre)) {
-			System.out.println("Producto encontrado");
-			
+			System.out.println("Producto encontrado");			
 			System.out.println("Dime el nuevo precio del producto: ");
 			double precio = sn.nextDouble();
 			productos.put(nombre, precio); // ACTUALIZAR EL PRECIO DEL PRODUCTO
