@@ -80,8 +80,9 @@ public class Main {
 		String titulo = st.nextLine();
 		System.out.print("Cual es el Autor del Libro: ");
 		String autor = st.nextLine();
-		Libro libro = new Libro(titulo, autor);
-		if (catalogo.remove(libro) != null) { // ELIMINA EL LIBRO SI EXISTE
+		Libro l1 = new Libro(titulo, autor);
+		if (catalogo.containsKey(l1)) {
+			catalogo.remove(l1); // BORRA EL LIBRO DE LOS REGISTROS
 			System.out.println("Libro se borro con exito");
 		} else {
 			System.err.println("No se encontro al libro");
