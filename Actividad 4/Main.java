@@ -14,7 +14,6 @@ public class Main {
 	// MÉTODO QUE MUESTRA EL MENÚ PRINCIPAL Y GESTIONA LAS OPCIONES
 	private static void menu() {
 		while (true) { // BUCLE PARA MOSTRAR EL MENÚ HASTA QUE SE DECIDA SALIR
-			System.out.println("\nSISTEMA DE GESTIÓN DE BIBLIOTECA");
 			System.out.println("1. Añadir un libro");
 			System.out.println("2. Actualizar cantidad de copias");
 			System.out.println("3. Eliminar un libro");
