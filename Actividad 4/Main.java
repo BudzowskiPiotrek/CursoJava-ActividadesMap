@@ -18,7 +18,6 @@ public class Main {
 			System.out.println("2. Actualizar cantidad de copias");
 			System.out.println("3. Eliminar un libro");
 			System.out.println("4. Mostrar todos los libros");
-			System.out.println("5. Salir");
 			System.out.print("Seleccione una opción: ");
 			int opcion = sn.nextInt();
 			menuSwitch(opcion);
@@ -40,9 +39,6 @@ public class Main {
 		case 4:
 			mostrarLibros();
 			break;
-		case 5:
-			System.out.println("Saliendo");
-			return;
 		default:
 			System.err.println("Opcion no Valida");
 		}
